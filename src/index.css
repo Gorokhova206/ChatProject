@@ -5,9 +5,238 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+div{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.chat-card{
+  height: 40px;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: 1px solid lightgray ;
+}
+
+.inline{
+  float: left;
+}
+
+.contact-area{
+  width: 20%;
+  outline: 1px solid lightgray;
+  height: 100vh;
+  float: left;
+}
+
+.chat-area{
+  width: 60%;
+  height: 100vh;
+  float: left;
+  outline: 1px solid lightgray;
+  position: relative;
+}
+
+.contact-info{
+  width: calc(20% - 20px);
+  outline: 1px solid lightgray;
+  height: 100vh;
+  float: left;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.small-block{
+  height: 40px;
+  width: 100%;
+  outline: 1px solid lightgray;
+  float: left;
+  text-align: right;
+}
+
+#banner {
+  display: none;
+  padding-left: 12px;
+  /*padding-top: 8px;*/
+  height: 40px;
+}
+
+.chats-list{
+  width: 100%;
+  outline: 1px solid lightgray; 
+  height: auto;
+  margin-top: 40px;
+}
+
+.chat-main-area{
+  bottom: 0;
+  position: absolute;
+  max-height: calc( 100% - 80px );
+  height: auto;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: 'auto';
+  margin-top: 12px;
+}
+
+.message-input-area{
+  bottom: 0;
+  position: absolute;
+}
+
+.contact-buttons{
+  height: 40px;
+  /*width: auto;*/
+  /*float: right;*/
+  /*padding-left: 12px;*/
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  float: left;
+
+}
+
+button{
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  padding: 0 0 0 0;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.avatar{
+  width: 24px;
+  height: 24px;
+  /*margin-left: 12px;*/
+  margin-top: 8px;
+  /*margin-bottom: 8px;*/
+  float: left;
+}
+
+.big-avatar{
+  width: 140px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  float: none;
+}
+
+.middle-avatar{
+  width: 40px;
+  height: 40px;
+  /*margin-left: 0;*/
+  /*margin-right: auto;*/
+  margin-top: 0;
+  /*float: none;*/
+}
+
+.button-image{
+  height: 100%;
+  width: 100%;
+
+}
+
+.close__button{
+  height: 12px;
+  width: 12px;
+  border-radius: 0;
+  /*margin: auto;*/
+  border: none;
+  
+}
+
+.dialog-title{
+  font-size: 16px;
+  margin-left: 8px;;
+  
+}
+
+.contact-name{
+  font-size: 15px;
+  height: 21px;
+  margin-top: 8px;
+  margin-left: 12px;
+  width: 90%;
+}
+
+.last-message{
+  font-size: 12px;
+  height: 18px;
+  color: grey;
+  margin-left: 12px;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+.last-message-date{
+  font-size: 12px;
+  height: 18px;
+  color: grey;
+  /*margin-right: 12px;*/
+  float: right;
+  width: 40%;
+  overflow: hidden;
+}
+
+.MuiDialog-container > .MuiPaper-root{
+  border-radius: 0;
+}
+
+.message-input-area__input{
+  border: 1px gray solid;
+  border-radius: 4px;
+  font-size: 14px;
+  float: left;
+  margin-top: 12px;
+  margin-left: 12px;
+  width:  calc( 100% - 70px );
+}
+
+.message{
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  background-color: white;
+  color: #000000;
+  font-size: 14px;
+  padding: 8px 12px 8px 12px;
+  height: auto;
+  max-width: 60%;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  float: right;
+}
+
+.alien-message{
+  background-color: mediumaquamarine;
+  color: white;
+  margin-left: 12px;
+  margin-right: auto;
+}
+
+@media (max-width: 1024px) { 
+  .contact-info {display: none;}
+  .contact-area {width: 40%;}
+  #banner {display: block;}  
 }
